@@ -22,10 +22,9 @@ namespace AREA
         }
 
         public async Task PostOnWallAsync(string accessToken, string message)
-        {
-            await _facebookClient.PostAsync(accessToken, "me/feed", new { message });
+         =>  await _facebookClient.PostAsync(accessToken, "me/feed", new { message });
 
-        }
+        
     }
 }
 
