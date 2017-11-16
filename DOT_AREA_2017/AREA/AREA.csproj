@@ -193,20 +193,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RequestClass\ModuleClass\AModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="RequestClass\ServiceClass\AService.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="FacebookService.cs" />
-    <Compile Include="FacebookWrapper.cs" />
+    <Compile Include="RequestClass\ModuleClass\FacebookModule.cs" />
+    <Compile Include="RequestClass\ParamsClass\FacebookParameters.cs" />
+    <Compile Include="RequestClass\ServiceClass\FacebookService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IFacebookWrapper.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -216,6 +218,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="RequestClass\ParamsClass\RequestParam.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

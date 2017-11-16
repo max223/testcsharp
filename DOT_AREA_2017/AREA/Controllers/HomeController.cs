@@ -13,12 +13,11 @@ namespace AREA.Controllers
         public ActionResult Index()
         {
             //TRY FACEBOOK WRAPPER
-            var accessToken = "ACEESS_TOKEN_DE_JOZZ";
-            var facebookWrapper = new FacebookWrapper();
-            var facebookService = new FacebookService(facebookWrapper);
+            var accessToken = "EAACEdEose0cBAFT4WEty8uQvRYH9POHPZAUh0CuAaTACZCgh8fdBToBYFt7HdTCHTZCett0dhC2z3Dbv0nPQWcuDojdY65RZCIEja8jTi2zsSJMLo2twAXoWZBvEwZBobiK6kH30oj9phz7Eee3XZAoo10OKfwgvdNqv54Odw6NyFovFNkgnmzhWWV7oKszCuUZD";
+            var facebookModule = new FacebookModule();
+            var facebookService = new FacebookService(facebookModule);
 
-            var postOnWallTask = facebookService.PostOnWallAsync(accessToken, "Hello from C# .NET Core! SISI L'AREA");
-            //Task.WaitAll(postOnWallTask); si je le remet, ça attend vraiment ma task et ça plante, si je l'enleve ça plante pas mais ma requete n'ai pas faites
+            var postOnWallTask = facebookService.PostOnWallAsync(accessToken, "Bonjour AREA");
             return View();
         }
 
